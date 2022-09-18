@@ -31,7 +31,7 @@
       // DoEmpty
       // 
       this.DoEmpty.AutoSize = true;
-      this.DoEmpty.Font = new System.Drawing.Font("Segoe UI", 9.75 F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+      this.DoEmpty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
       this.DoEmpty.ForeColor = System.Drawing.Color.SteelBlue;
       this.DoEmpty.Image = global::EmptyRecycleBin.Properties.Resources.icon_scaled;
       this.DoEmpty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -47,7 +47,7 @@
       // DoExit
       // 
       this.DoExit.AutoSize = true;
-      this.DoExit.Font = new System.Drawing.Font("Segoe UI", 9.75 F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+      this.DoExit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
       this.DoExit.ForeColor = System.Drawing.Color.OrangeRed;
       this.DoExit.Image = global::EmptyRecycleBin.Properties.Resources.icon2_scaled;
       this.DoExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -64,7 +64,7 @@
       // 
       this.LINK.AutoEllipsis = true;
       this.LINK.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-      this.LINK.Font = new System.Drawing.Font("Segoe Print", 9.75 F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+      this.LINK.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
       this.LINK.ForeColor = System.Drawing.Color.Red;
       this.LINK.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
       this.LINK.LinkColor = System.Drawing.Color.Red;
@@ -80,7 +80,7 @@
       // 
       // MAIN
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8 F, 20 F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.AutoSize = true;
       this.ClientSize = new System.Drawing.Size(399, 365);
