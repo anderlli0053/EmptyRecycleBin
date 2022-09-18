@@ -10,7 +10,6 @@ bin/Debug/net6.0-windows/EmptyRecycleBin.deps.json
 *.lock
 bin/Debug/net6.0-windows/EmptyRecycleBin.runtimeconfig.json
 *.cache
-*.txt
 obj/Debug/net6.0-windows/EmptyRecycleBin.designer.deps.json
 obj/Debug/net6.0-windows/EmptyRecycleBin.AssemblyInfo.cs
 obj/Debug/net6.0-windows/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
@@ -22,3 +21,5 @@ obj/Debug/net6.0-windows/EmptyRecycleBin.GlobalUsings.g.cs
 obj/Debug/net6.0-windows/EmptyRecycleBin.GeneratedMSBuildEditorConfig.editorconfig
 obj/Debug/net6.0-windows/EmptyRecycleBin.designer.runtimeconfig.json
 obj/EmptyRecycleBin.csproj.nuget.dgspec.json
+obj/Debug/net6.0-windows/EmptyRecycleBin.csproj.FileListAbsolute.txt
+obj/Debug/net6.0-windows/EmptyRecycleBin.Properties.Resources.resources

@@ -35,10 +35,11 @@
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
-
-
-
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Windows;
+using System.Net;
 
 
 
@@ -58,15 +59,7 @@ namespace EmptyRecycleBin
         }
 
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
-        static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, RecycleFlags dwFlags);
-
-
-
-
-
-
-
-
+        static extern uint SHEmptyRecycleBin(IntPtr hwnd, string? pszRootPath, RecycleFlags dwFlags);
 
 
 
@@ -75,6 +68,7 @@ namespace EmptyRecycleBin
             InitializeComponent();
         }
 
+   
 
         private void DoExit_Click(object sender, EventArgs e)
         {
@@ -95,12 +89,12 @@ namespace EmptyRecycleBin
                 {
                     // Execute the method with the required parameters
                     uint IsSuccess = SHEmptyRecycleBin(IntPtr.Zero, null, RecycleFlags.SHRB_NOCONFIRMATION);
-                    MessageBox.Show("The recycle bin has been succesfully recycled !", "Clear recycle bin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("The recycle bin has been succesfully emptied !", "Empty recycle bin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
                     // Handle exceptions
-                    MessageBox.Show("The recycle bin couldn't be recycled" + ex.Message, "Clear recycle bin", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("The recycle bin couldn't be emptied" + ex.Message, "Empty recycle bin", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
 
             }
@@ -115,5 +109,32 @@ namespace EmptyRecycleBin
         {
 
         }
+
+        private void LINK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            
+            try
+            {
+                VisitLink();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open link that was clicked!");
+            }
+
+        }
+
+        private void VisitLink()
+        {
+
+            System.Diagnostics.Process.Start("https://slo-dev-team.000webhostapp.com/");
+            LINK.LinkVisited = true;
+
+            //ProcessStartInfo sInfo = new ProcessStartInfo("https://slo-dev-team.000webhostapp.com/");
+            //Process.Start(sInfo);
+        }
+
+
     }
 }
