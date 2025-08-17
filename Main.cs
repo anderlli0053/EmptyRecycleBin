@@ -3,10 +3,10 @@
 /*************************************************************************/
 /*                       This file is part of:                           */
 /*                           EmptyRecycleBin                             */
-/*                      https://godotengine.org                          */
+/*                      https://andrewpozenel.com/                       */
 /*************************************************************************/
 /*                                                                       */
-/*              Copyright (c) 2021-2022 Andrew Poûenel                   */
+/*              Copyright (c) 2021-2022 Andrew Po≈æenel                   */
 /*                                                                       */
 /* Permission is hereby granted, free of charge, to any person obtaining */
 /* a copy of this software and associated documentation files (the       */
@@ -28,7 +28,7 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
 /*************************************************************************/
 
-// Andrew Poûenel AKA SloDevTeam
+// Andrew Po≈æenel AKA SloDevTeam
 
 using System.IO;
 using System.Runtime.InteropServices;
